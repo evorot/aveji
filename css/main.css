@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Viaoda+Libre&display=swap');
+
+.navbar {
+    background-color: #987654;
+    /*height: 100px;*/
+}
+
+.navbar__brand__text__container {
+    max-width: 200px;
+}
+
+.navbar__brand__text {
+    text-decoration: none;
+    color: #fff;
+}
+
+.test {
+    background-color: #987654;
+}
+
+body {
+    background-color: #1E1F24;
+    color: #E7E7E7;
+}
+
+/*.col {*/
+/*    border: 5px solid #985466;*/
+/*}*/
+
+/*.col-4 {*/
+/*    border: 5px solid #985466;*/
+/*}*/
+
+/*.col-8 {*/
+/*    border: 5px solid #985466;*/
+/*}*/
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.home {
+    padding-top: 0;
+}
+
+/*main {*/
+/*    margin-top: 100px;*/
+/*}*/
+
+
+h1 {
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 60px;
+}
+
+
+h2 {
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 35px;
+}
+
+.title {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.title__slider {
+    margin-top: 50px;
+}
+
+.my__btn {
+    background-color: #987654;
+    color: #E7E7E7;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 340px;
+    height: 55px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    cursor: pointer;
+    transition: 500ms ease;
+}
+
+.my__btn:hover {
+    filter: brightness(120%);
+}
+
+
+/*.advantages {*/
+/*    margin-top: 100px;*/
+/*}*/
+
+.my__blocks {
+    margin-top: 80px;
+}
+
+.my__block {
+    /*width: 320px;*/
+    /*height: 256px;*/
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    /*justify-content: space-around;*/
+}
+
+.advantages__block__text__title {
+    margin-top: 24px;
+}
+
+.block__text__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.block__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+    text-align: center;
+    /*margin-bottom: 20px;*/
+}
+
+
+.materials__block__text__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.material_blog_img:hover {
+    filter: brightness(150%); /* Увеличение яркости на 50% при наведении */
+}
+
+.stages__block__text {
+    margin-top: 10px;
+}
+
+.circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: rgba(0, 123, 255, 0); /* Прозрачный фон */
+    border: 2px solid white; /* Белый контур */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Цвет текста */
+}
+
+.gallery__col {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery__img {
+    transition: filter 0.05s ease;
+}
+
+
+.image-text {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    /*margin-left: 10%;*/
+    /*margin-right: 10%;*/
+    user-select: none;
+    /*top: 20%;*/
+    z-index: 9999;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery__block:hover .gallery__img {
+    filter: invert(44%) sepia(66%) saturate(245%) hue-rotate(349deg) brightness(96%) contrast(90%);
+}
+
+.gallery__block:hover .image-text {
+    animation: fadeInUp;
+    animation-duration: 1s;
+    opacity: 1;
+}
+
+.feedback__col {
+    display: flex;
+    /*margin-top: 80px;*/
+    height: 700px;
+}
+
+
+.feedback__union__block {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    /*background-color: #f00; !* Цвет квадрата *!*/
+}
+
+.feedback__up__block {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    background-color: #2E2E32; /* Цвет квадрата */
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback__up__block img {
+    /*margin: 10%;*/
+    height: 15%;
+}
+
+.feedback__up__block__text {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    text-align: center;
+}
+
+
+.circle__2 {
+    position: absolute;
+    bottom: 15%; /* Положение круга, чтобы половина была видна под квадратом */
+    left: 50%;
+    transform: translateX(-50%);
+    /*width: 100px; !* Размер круга *!*/
+    /*height: 100px; !* Размер круга *!*/
+    /*background-color: #00f; !* Цвет круга *!*/
+    /*border-radius: 50%; !* Сделать круг *!*/
+    width: 100px;
+    height: 100px;
+    /*height: 30%;*/
+    border-radius: 50%;
+    background-color: rgba(115, 115, 115, 1); /* Прозрачный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E7E7E7;
+}
+
+.callback {
+    background-color: #2E2E32;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.callback h2 {
+    padding-top: 100px;
+}
+
+.callback__text {
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 26px;
+    text-align: center;
+}
+
+.callback__form__container {
+    background-color: #1E1F24;
+    margin-top: 50px;
+
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: left;*/
+}
+
+.callback__form {
+    margin: 40px;
+}
+
+.form__button {
+    margin-top: 34px;
+    width: 100% !important;
+    border: none;
+}
+
+.callback__form_elem {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 0 !important;
+}
+
+.footer__rows {
+    margin-top: 60px;
+
+}
+
+.footer__text__position {
+    text-align: left;
+}
+
+.footer__text {
+    color: #C8C8C8;
+}
+
+.footer__ref {
+    margin-bottom: 10px !important;
+}
+
+.footer__ref:hover {
+    color: white;
+}
+
+.footer_form {
+    height: 55px;
+}
+
+.checkbox__label {
+    width: 45%;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 52px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .my__btn {
+        width: 100%;
+    }
+
+    .block__text {
+        font-size: 14px;
+    }
+
+    .my__blocks {
+        margin-top: 40px;
+    }
+
+    .feedback__col {
+        margin-top: 40px;
+        height: 700px;
+    }
+
+    section {
+        margin-bottom: 100px;
+    }
+
+    .callback img {
+        max-width: 100%;
+        height: auto;
+    }
+}
