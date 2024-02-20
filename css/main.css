@@ -13,10 +13,6 @@
     color: #fff;
 }
 
-.test {
-    background-color: #987654;
-}
-
 body {
     background-color: #1E1F24;
     color: #E7E7E7;
@@ -51,13 +47,13 @@ h2 {
 }
 
 .my__btn {
-    background-color: #987654;
-    color: #E7E7E7;
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    width: 340px;
-    height: 55px;
+    background-color: #987654; /*Цвет фона*/
+    color: #E7E7E7; /*Цвет шрифта*/
+    font-family: Roboto, sans-serif; /*Шрифт*/
+    font-weight: 500; /*Толщина шрифта*/
+    font-size: 20px; /*Размер шрифта*/
+    width: 340px; /*Ширина кнопки*/
+    height: 55px; /*Высота кнопки*/
     margin-top: 30px;
     display: flex;
     justify-content: center; /* Горизонтальное выравнивание по центру */
@@ -119,7 +115,7 @@ h2 {
 .circle {
     width: 130px;
     height: 130px;
-    border-radius: 50%;
+    border-radius: 50%; /*Радиус закругления границы элемента, именно он делает из элемента круг*/
     background-color: rgba(0, 123, 255, 0); /* Прозрачный фон */
     border: 2px solid white; /* Белый контур */
     display: flex;
